@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lynn</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #fafafa; color: #18181b;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #09090b; color: #fafafa; }
+    .card { background: #18181b; border-color: #27272a; }
+    .dot { background: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,.15); }
+    .meta { color: #71717a; }
+  }
+  .card {
+    padding: 2.5rem 3rem; border: 1px solid #e4e4e7; border-radius: 14px;
+    background: #fff; text-align: center; max-width: 380px;
+  }
+  h1 { margin: 0 0 .5rem; font-size: 1.35rem; font-weight: 600; letter-spacing: -.01em; }
+  p { margin: 0; font-size: .9rem; line-height: 1.6; }
+  .status { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.25rem;
+            font-size: .8rem; font-variant-numeric: tabular-nums; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #16a34a; }
+  .meta { margin-top: 1.5rem; font-size: .72rem; color: #a1a1aa; letter-spacing: .02em; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>lynn</h1>
+    <p>This page is up.</p>
+    <div class="status"><span class="dot" aria-hidden="true"></span><span>operational</span></div>
+    <div class="meta">lynn.loc.cc</div>
+  </main>
+</body>
+</html>
